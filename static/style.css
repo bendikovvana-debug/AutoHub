@@ -1,0 +1,112 @@
+/* Основные настройки сайта */
+body {
+    background-color: #0a0e14;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 40px;
+}
+
+/* Контейнер для всех карточек */
+.cars-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Расстояние между карточками */
+    flex-wrap: wrap;
+}
+
+/* Сами карточки */
+.car-card {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое */
+}
+
+/* Настройки картинок, чтобы они не "прыгали" */
+.car-card img {
+    width: 250px;      /* Ширина карточки */
+    height: 150px;     /* Фиксированная высота */
+    object-fit: cover; /* Обрезает лишнее, сохраняя пропорции */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Текст внутри */
+.car-card h2 {
+    margin: 10px 0;
+}
+
+.car-card p {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Чтобы текст занимал нужное место */
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.car-link {
+    text-decoration: none;
+    color: inherit;
+}
+/* Большая страница автомобиля */
+
+.car-page {
+    background-color: #161b22;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.car-page img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 15px;
+}
+
+.car-page h2 {
+    font-size: 32px;
+    margin-top: 35px;
+    color: white;
+}
+
+.car-page p,
+.car-page li {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #d0d0d0;
+}
+
+.car-page ul {
+    padding-left: 30px;
+}
+.car-page ul {
+    list-style: none;
+    padding-left: 0;
+}

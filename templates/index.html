@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header><h1>AutoHub</h1></header>
+
+    <div class="cars-container">
+        <div class="car-card">
+            <img src="{{ url_for('static', filename='images/bmw.jpg') }}" alt="BMW">
+            <h2>BMW</h2>
+            <p>Спортивный характер и драйв.</p>
+            <a href="/bmw" class="btn">Подробнее</a>
+        </div>
+
+        <div class="car-card">
+            <img src="{{ url_for('static', filename='images/volkswagen.jpg') }}" alt="Volkswagen">
+            <h2>Volkswagen</h2>
+            <p>Немецкое качество и комфорт.</p>
+            <a href="/volkswagen" class="btn">Подробнее</a>
+        </div>
+
+        <div class="car-card">
+            <img src="{{ url_for('static', filename='images/volvo.jpg') }}" alt="Volvo">
+            <h2>Volvo</h2>
+            <p>Безопасность прежде всего.</p>
+            <a href="/volvo" class="btn">Подробнее</a>
+        </div>
+    </div>
+
+</body>
+</html>
